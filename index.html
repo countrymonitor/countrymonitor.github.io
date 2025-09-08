@@ -13,7 +13,7 @@
       
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="assets/logo.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.19">
     
     
@@ -23,6 +23,9 @@
     
     
       <link rel="stylesheet" href="assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -51,7 +54,12 @@
   </head>
   
   
-    <body dir="ltr">
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="amber" data-md-color-accent="indigo">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -78,8 +86,7 @@
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="." title="Country Monitor" class="md-header__button md-logo" aria-label="Country Monitor" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <img src="assets/logo.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -96,15 +103,15 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              🌐 General
             
           </span>
         </div>
       </div>
     </div>
     
+      
     
-      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
     
@@ -188,8 +195,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="." title="Country Monitor" class="md-nav__button md-logo" aria-label="Country Monitor" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+  <img src="assets/logo.png" alt="logo">
 
     </a>
     Country Monitor
@@ -230,7 +236,7 @@
   
   
   <span class="md-ellipsis">
-    Home
+    🌐 General
     
   </span>
   
@@ -243,7 +249,7 @@
   
   
   <span class="md-ellipsis">
-    Home
+    🌐 General
     
   </span>
   
@@ -296,6 +302,28 @@
   
 </nav>
       
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ukraine.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🇺🇦 Ukraine
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -370,13 +398,16 @@
 
 
 <h1 id="country-monitor">Country Monitor</h1>
+<p><img src="assets/logo.png" alt="Country Monitor Logo" style="width:30%;"></p>
 <p>Welcome to the <strong>Country Monitor project</strong>.<br />
 This site provides countrymonitor datasets ICMP-based full block surveys to detect Internet disruptions.</p>
 <h2 id="what-we-publish">What we publish</h2>
-<p>We provide <strong>aggregated block-level data</strong> only:
-- Number of responding IPs per timestamp
-- Mean and variance of RTT
-- Ever-active IPs per month</p>
+<p>We provide <strong>aggregated /24 block-level data</strong> only:</p>
+<ul>
+<li>Number of responding IPs per timestamp</li>
+<li>Mean and variance of RTT</li>
+<li>Ever-active IPs per month</li>
+</ul>
 <h2 id="what-we-do-not-publish">What we do <em>not</em> publish</h2>
 <p>The raw dataset contains <strong>individual Ukrainian IPs and their responsiveness</strong>.<br />
 Publishing this data could put people and networks at risk.<br />
