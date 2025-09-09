@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .s{fill:none;stroke:#F59E0B;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}
+    </style>
+  </defs>
+  <circle class="s" cx="32" cy="32" r="28"/>
+  <path class="s" d="M32 4c8 8 12 20 12 28s-4 20-12 28M32 4c-8 8-12 20-12 28s4 20 12 28"/>
+  <path class="s" d="M4 32h56M10 20h44M10 44h44"/>
+</svg>
